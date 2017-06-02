@@ -1,0 +1,29 @@
+.code, .completion, .keyword {
+	position: absolute;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Monospace;
+	margin: 0;
+}
+
+.code {
+	color: #ffffff;
+	background-color: #272822;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 10px;
+}
+
+.keyword {
+	z-index: 1;
+}
+
+.completion {
+	color: #000000;
+	z-index: 2;
+}
+
+.editor_container {
+	position: relative;
+	width: 50%;
+}

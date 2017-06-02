@@ -1,0 +1,28 @@
+.record_h, .record_rank, .record_nick, .record_time {
+	font-size: 30px;
+	font-family: monospace;
+	display: inline-block;
+	color: #2C3E50;
+	margin: 0 0 30px 0;
+}
+
+.record_rank {
+	clear: left;
+}
+
+.record_nick {
+	text-align: right;
+	width: 250px;
+}
+
+.record_time {
+	text-align: right;
+	width: 250px;
+}
+
+.record_h {
+	font-size: 60px;
+}
+.record_con {
+	margin-left: 15px;
+}

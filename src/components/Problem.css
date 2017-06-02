@@ -1,0 +1,35 @@
+.problem {
+	width: 200px;
+	height: 220px;
+	border-width: 3px;
+	border-color: #2980B9;
+	border-style: solid;
+	margin: 15px 50px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.title {
+	line-height: 60px;
+	text-align: center;
+	font-size: 40px;
+	color: #2C3E50;
+	background-color: #2980B9;
+	margin: 0px;
+	font-family: Monospace;
+}
+
+.time {
+	line-height: 140px;
+	text-align: center;
+	font-size: 60px;
+	color: #E74C3C;
+	margin: 0px;
+	font-family: Monospace;
+}
+
+.prob_b {
+	position: relative;
+	top: 42px;
+	left: -100px;
+}
