@@ -26,7 +26,7 @@ class Problem extends React.Component {
 
 	render() {
 		return(
-			<div>
+			<div className="problem_outer">
 				<div onClick={this.click.bind(this)} className = "problem">
 					<p className="title">{this.props.title}</p>
 					<p className="time">{this.timeToString(this.props.time)}</p>

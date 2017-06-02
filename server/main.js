@@ -16,7 +16,7 @@ const probSchema = new Schema({
 	recs: [ {time: Number, nick: String} ]
 })
 const Prob = mongoose.model('prob', probSchema)
-const port = 8000
+const port = 80
 
 db.on('error', console.error)
 db.once('open', () => {
