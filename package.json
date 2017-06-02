@@ -1,8 +1,9 @@
 {
-  "name": "react-tutorial",
+  "name": "CodeWar",
   "version": "1.0.0",
-  "description": "react-tutorial",
+  "description": "CodeWar: 2017 spring sparcs newbee project",
   "main": "index.js",
+  "repository": "http://github.com/Medowhill/codebattle",
   "scripts": {
     "build": "node_modules/.bin/babel --presets es2015 server --out-dir build && ./node_modules/.bin/webpack",
     "start": "node ./build/main.js",
