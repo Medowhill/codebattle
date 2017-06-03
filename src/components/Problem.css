@@ -19,7 +19,7 @@
 	color: #2C3E50;
 	background-color: #2980B9;
 	margin: 0px;
-	font-family: Monospace;
+	font-family: inconsolata;
 }
 
 .time {
@@ -28,7 +28,7 @@
 	font-size: 60px;
 	color: #E74C3C;
 	margin: 0px;
-	font-family: Monospace;
+	font-family: inconsolata;
 }
 
 .prob_b {

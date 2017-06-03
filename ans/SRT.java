@@ -1,8 +1,9 @@
 public class SRT { 
 	public static void main(String[] args) {
+		Help help = new Help();
 		int i;
 		for (i = 0; i < input.length; i++)
-			if (!cmp(Help.srt(input[i]), output[i]))
+			if (!cmp(help.srt(input[i]), output[i]))
 				break;
 		System.out.print((i == input.length) ? 1 : 0);
 	}

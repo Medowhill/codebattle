@@ -7,7 +7,7 @@ import Promise from 'promise'
 
 const upload = multer()
 const router = express.Router()
-const header = 'public class Help {\npublic static '
+const header = 'public class Help {\npublic '
 const footer = '}'
 
 const fw = Promise.denodeify(fs.writeFile)

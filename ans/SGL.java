@@ -1,8 +1,9 @@
 public class SGL { 
 	public static void main(String[] args) {
+		Help help = new Help();
 		int i;
 		for (i = 0; i < output.length; i++)
-			if (Help.sgl(input1[i], input2[i]) != output[i])
+			if (help.sgl(input1[i], input2[i]) != output[i])
 				break;
 		System.out.print((i == output.length) ? 1 : 0);
 	}

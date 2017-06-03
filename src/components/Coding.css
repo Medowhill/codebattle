@@ -3,7 +3,7 @@
 }
 
 .time_coding, .submit_coding, .description_coding, .modal {
-	font-family: monospace;
+	font-family: inconsolata;
 }
 
 .description_coding {

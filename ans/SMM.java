@@ -1,8 +1,9 @@
 public class SMM { 
 	public static void main(String[] args) {
+		Help help = new Help();
 		int i;
 		for (i = 0; i < input.length; i++)
-			if (Help.smm(input[i]) != output[i])
+			if (help.smm(input[i]) != output[i])
 				break;
 		System.out.print((i == input.length) ? 1 : 0);
 	}

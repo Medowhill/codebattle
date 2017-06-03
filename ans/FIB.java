@@ -1,8 +1,9 @@
 public class FIB { 
 	public static void main(String[] args) {
+		Help help = new Help();
 		int i;
 		for (i = 0; i < output.length; i++)
-			if (Help.fib(i + 1) != output[i])
+			if (help.fib(i + 1) != output[i])
 				break;
 		System.out.print((i == output.length) ? 1 : 0);
 	}

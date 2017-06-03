@@ -397,8 +397,8 @@ Editor.defaultProps = {
 	defaultHeight: 600,
 	leftOff: 13,
 	topOff: 3,
-	fontWidth: 8.4,
-	lineHeight: 21
+	fontWidth: 8,
+	lineHeight: 24
 }
 	
 export default Editor
