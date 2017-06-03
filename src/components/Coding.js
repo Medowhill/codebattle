@@ -88,6 +88,7 @@ class Coding extends React.Component {
 					</Button>
 					<p className="time_coding">{this.timeToString(this.state.time)}</p>
 					<p className="description_coding">{this.state.des}</p>
+					<p className="description_coding">{this.props.message}</p>
 				</div>
 				<Modal basic open={this.state.modal != 0}>
 					<Modal.Content>
@@ -114,6 +115,10 @@ class Coding extends React.Component {
 			</div>
 		)
 	}
+}
+
+Coding.defaultProps = {
+	message: 'You should write your code in Java. You are free to use your own helper functions.'
 }
 
 export default Coding
