@@ -12,6 +12,14 @@
 	display: inline-block;
 }
 
+.title, .time {
+	font-family: inconsolata;
+}
+
+.win .title, .win .time {
+	font-family: monospace;
+}
+
 .title {
 	line-height: 60px;
 	text-align: center;
@@ -19,7 +27,6 @@
 	color: #2C3E50;
 	background-color: #2980B9;
 	margin: 0px;
-	font-family: inconsolata;
 }
 
 .time {
@@ -28,7 +35,6 @@
 	font-size: 60px;
 	color: #E74C3C;
 	margin: 0px;
-	font-family: inconsolata;
 }
 
 .prob_b {

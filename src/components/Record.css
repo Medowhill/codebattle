@@ -6,6 +6,11 @@
 	margin: 0 0 30px 0;
 }
 
+.win .record_h, .win .record_rank, .win .record_nick, .win .record_time {
+	font-family: monospace;
+}
+
+
 .record_rank, .record_nick, .record_time {
 	text-align: right;
 }

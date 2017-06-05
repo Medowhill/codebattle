@@ -6,6 +6,10 @@
 	font-family: inconsolata;
 }
 
+.win .time_coding, .win .submit_coding, .win .description_coding, .win .modal {
+	font-family: monospace;
+}
+
 .description_coding {
 	margin-top: 20px;
 	font-size: 22px;

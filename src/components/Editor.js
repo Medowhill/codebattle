@@ -1,4 +1,5 @@
 import React from 'react'
+import platform from 'platform'
 import Keyword from './Keyword.js'
 import Completion from './Completion.js'
 import './Editor.css'
@@ -7,7 +8,7 @@ class Editor extends React.Component {
 
 	constructor(props) {
 		super(props)
-		this.state = {height: this.props.defaultHeight, highlights: [], symbols: [], selected: -1}
+		this.state = {osx: platform.os.family.startsWith('O'), height: this.props.defaultHeight, highlights: [], symbols: [], selected: -1}
 		this.isLetter = this.isLetter.bind(this)
 		this.isNumber = this.isNumber.bind(this)
 		this.change = this.change.bind(this)
@@ -360,13 +361,14 @@ class Editor extends React.Component {
 						<Keyword position={data.position} line={data.line} word={data.word}
 								color={data.color} lineHeight={this.props.lineHeight}
 								leftOff={this.props.leftOff} topOff={this.props.topOff}
-								fontWidth={this.props.fontWidth} key={i}/>)}
+								fontWidth={this.state.osx ? this.props.fontWidth : this.props.fontWidth_w}
+								key={i}/>)}
 				</div>
 				<div>
 					{this.state.symbols.map((data, i) =>
 						<Completion position={data.position} line={data.line} word={data.word}
 								leftOff={this.props.leftOff} topOff={this.props.topOff}
-								fontWidth={this.props.fontWidth}
+								fontWidth={this.state.osx ? this.props.fontWidth : this.props.fontWidth_w}
 								lineHeight={this.props.lineHeight}
 								selected={this.state.selected == i} key={i}/>)}
 				</div>
@@ -398,6 +400,7 @@ Editor.defaultProps = {
 	leftOff: 13,
 	topOff: 3,
 	fontWidth: 8,
+	fontWidth_w: 8,
 	lineHeight: 24
 }
 	

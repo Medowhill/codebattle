@@ -30,6 +30,9 @@ app.use(bodyParser.json())
 app.get(/bundle.js/, (req, res) => {
 	res.sendFile(path.resolve(__dirname, '../public/bundle.js'))
 })
+app.get(/css_browser_selector.js/, (req, res) => {
+	res.sendFile(path.resolve(__dirname, '../public/css_browser_selector.js'))
+})
 app.get('/', (req, res) => {
 	res.sendFile(path.resolve(__dirname, '../public/index.html'))
 })

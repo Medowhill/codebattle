@@ -6,6 +6,10 @@
 	margin: 0;
 }
 
+.win .code, .win .completion, .win .keyword {
+	font-family: monospace;
+}
+
 .code {
 	color: #ffffff;
 	background-color: #272822;
