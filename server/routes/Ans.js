@@ -17,9 +17,12 @@ router.use(bodyParser.json())
 router.post('/:name', upload.array(), (req, res) => {
 	let name = req.params.name
 	let code = req.body.code
-	fw('ans/Help.java', header + code + footer)
-	.then(() => {return exec('javac ans/' + name + '.java ans/Help.java')})
-	.then(() => {return exec('java -cp ans ' + name)})
+        let time = (new Date).getTime().toString()
+        exec('mkdir ans/' + time)
+        .then(() => {return exec('cp ans/' + name + '.java ans/' + time + '/' + name + '.java')})
+	.then(() => {return fw('ans/' + time + '/Help.java', header + code + footer)})
+	.then(() => {return exec('javac ans/' + time + '/' + name + '.java ans/' + time + '/Help.java')})
+	.then(() => {return exec('java -cp ans/' + time + ' ' + name)})
 	.then(out => {
 		res.send({result: out})
 	})
